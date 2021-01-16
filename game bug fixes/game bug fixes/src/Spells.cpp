@@ -87,7 +87,7 @@ _int_ __stdcall Y_Fix_ReportStatusMsg_CastArmageddonSpell(HiHook* hook, _BattleM
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
 // запрет выдачи заклинаний у артефактов, если они запрещены через UN:J0/spell_id/1;
-int __stdcall Y_ArtGive_Spell(HiHook* hook, int spells_array, unsigned int spell_id, char enable) 
+/*int __stdcall Y_ArtGive_Spell(HiHook* hook, int spells_array, unsigned int spell_id, char enable) 
 {
     if (enable && o_GameMgr->disabled_spells[spell_id]) {
         if ( spell_id != SPL_TITANS_LIGHTNING_BOLT ) {
@@ -119,7 +119,7 @@ int __stdcall Y_ArtGive_AllSpells(HiHook* hook, int spells_array, char enable)
     }
 
     return CALL_2(int, __thiscall, hook->GetDefaultFunc(), spells_array, enable);
-}
+}*/
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
